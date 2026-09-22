@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body, #root {
+  min-height: 100%;
+}
 body {
   margin: 0;
-  padding: 0;
-  background: #020617;
-  color: white;
-  font-family: Arial, sans-serif;
+  background: #06070b;
 }
