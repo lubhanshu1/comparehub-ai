@@ -1,15 +1,20 @@
+import { Link } from "react-router-dom"
+
 export default function Navbar() {
-    return (
-        <nav className="flex justify-between items-center px-8 py-6 border-b border-zinc-800 backdrop-blur-xl relative z-10">
+  return (
+    <nav className="nav-shell">
+      <Link to="/" className="brand" aria-label="CompareHub AI home">
+        <span className="brand-mark">CH</span>
+        <span>
+          <strong>CompareHub</strong><em>AI</em>
+        </span>
+      </Link>
 
-            <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">
-                CompareHub AI
-            </h1>
+      <div className="nav-meta">
+        <span className="status-dot" /> Decision Intelligence Engine
+      </div>
 
-            <button className="bg-white text-black px-5 py-2 rounded-2xl font-semibold hover:scale-105 transition duration-300">
-                Compare Now
-            </button>
-
-        </nav>
-    )
+      <Link to="/" className="nav-cta">Launch comparison <span>↗</span></Link>
+    </nav>
+  )
 }
