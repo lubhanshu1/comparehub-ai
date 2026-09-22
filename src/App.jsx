@@ -3,25 +3,12 @@ import Home from "./pages/Home"
 import Comparison from "./pages/Comparison"
 
 export default function App() {
-
   return (
-
     <BrowserRouter>
-
       <Routes>
-
-        <Route
-          path="/"
-          element={<Home />}
-        />
-
-        <Route
-          path="/comparison/:slug"
-          element={<Comparison />}
-        />
+        <Route path="/" element={<Home />} />
+        <Route path="/comparison/:slug" element={<Comparison />} />
       </Routes>
-
     </BrowserRouter>
-
   )
 }
